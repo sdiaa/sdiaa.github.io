@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)https://hzhaoaf.github.io/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Shimin DI</title>
+
+    <!--<base target="_blank">--><base href="." target="_blank">
+    <!-- Bootstrap -->
+    <link href="./Shimin-DI-files/bootstrap.min.css" rel="stylesheet">
+    <link href="./Shimin-DI-files/style.css" rel="stylesheet">
+    <link href="./Shimin-DI-files/font-awesome.min.css" rel="stylesheet">
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async="" src="./Shimin-DI-files/analytics.js"></script><script async="" src="./Shimin-DI-files/js"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+    gtag('config', 'UA-106998894-1');
+    </script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <script type="text/javascript" src="./Shimin-DI-files/jquery-1.12.4.min.js"></script></head>
+
+  <body>
+    <div class="container" id="container">
+      <a href="https://github.com/hzhaoaf" class="github-corner"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#FD6C6C; color:#fff; position: absolute; top: 0; border: 0; right: 0;"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+      <!-- Header -->
+      <div class="row">
+        <div class="col-sm-5">
+          <h1> Shimin DI (邸世民)</h1>
+          <h2> Ph.D. Candidate in HKUST</h2>
+          <h4><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;&nbsp;sdiaa AT connect DOT ust DOT hk</h4>
+          <h4><i class="fa fa-github-alt" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://dblp.org/pid/223/3142.html">DBLP</a>&nbsp;&nbsp;
+          </h4>
+          <!-- 
+          <h4><i class="fa fa-github-alt" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://github.com/hzhaoaf">Github</a>&nbsp;&nbsp;
+              <i class="fa fa-google" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://scholar.google.com/citations?user=Odk4NEkAAAAJ&amp;hl=en">Scholar</a>
+          </h4>
+          --> 
+        </div>
+          <!--
+          <dl class="dl-horizontal" style="align:left">
+            <dt><i class="fa fa-envelope-o" aria-hidden="true"></i></dt>
+            <dd>hzhaoaf AT cse DOT ust DOT hk</dd>
+            <dt><i class="fa fa-github-alt" aria-hidden="true"></i></dt>
+            <dd><a href="https://github.com/PhoenixZhao">Github</a>
+            </dd>
+          </dl>
+          <h4><a href="http://www.cse.ust.hk/">Department of Computer Science and Engineering</a></h4>
+          <h4><a href="http://www.ust.hk/">Hong Kong University of Science and Technology</a></h4>
+        </div>
+        <div class="col-sm-7 personal-information">
+          <dl class="dl-horizontal">
+            <dt><i class="fa fa-home" aria-hidden="true"></i></dt>
+            <dd>Room 3654 (Lift 31/32)</dd>
+            <dd>Academic Building, HKUST,</dd>
+            <dd>Clear Water Bay, Hong Kong, China</dd>
+            <dt><i class="fa fa-envelope-o" aria-hidden="true"></i></dt>
+            <dd>hzhaoaf AT cse DOT ust DOT hk</dd>
+            <dt><i class="fa fa-github-alt" aria-hidden="true"></i></dt>
+            <dd><a href="https://github.com/PhoenixZhao">Github</a>
+            </dd>
+          </dl>
+        </div>
+          -->
+      </div>
+
+      <!-- Welcome Text -->
+      <div class="row-fluid content-header text-left">
+        <h2><strong>News</strong></h2>
+      </div>
+      <div class="row">
+        <ul>
+          <li>Jan. 2021: One paper was accepted in The Web Conference 2021. </li>
+        </ul>
+      </div>
+
+      <!-- Welcome Text -->
+      <div class="row-fluid content-header text-left">
+        <h2><strong>Biography</strong></h2>
+      </div>
+      <div class="row-fluid">
+        <p>
+        Currently I am a Ph.D. candidate in the Department of Computer Science and Engineering, Hong Kong University of Science and Technology (HKUST), under supervision of <a href="https://scholar.google.com/citations?user=gtglwgYAAAAJ&hl=en">Prof. Lei CHEN</a>.
+        Before HKUST, I obtained the bachelor degree from Hunan University (China) in 2016 and master degree from HKUST in 2017.
+        </p>
+        <p>
+
+        </p>
+      </div>
+      <div class="row-fluid content-header text-left">
+        <h2><strong>Research Interest</strong></h2>
+      </div>
+      <div class="row-fluid">
+        <p>
+        My research interests are <i>Automated Machine Learning</i> and <i>Knowledge Base Embedding</i>.
+
+        </p><p><i>Please feel free to contact me if you are interested in any of my research topics.</i></p>
+
+      </div>
+      <div class="row-fluid content-header text-left">
+        <h2><strong>Publications</strong></h2> 
+        <!--
+        (<i>* means equal contributions, and check my <a href="https://scholar.google.com/citations?user=Odk4NEkAAAAJ&amp;hl=en">Google Scholar</a> for complete publications. </i>)
+        -->
+      </div>
+      <div class="row">
+        <ul>
+
+          <li class="publication">
+            <div class="publication-title">
+              "Searching to Sparsify Tensor Decomposition for N-ary Relational Data."
+                <strong>WebConf</strong>, 2021.
+            </div>
+            <div class="publication-author">
+              <strong>Shimin DI</strong>, Quanming YAO, Lei CHEN.
+            </div>
+            <!--
+            <div class="publication-link">
+              [<a href="https://arxiv.org/abs/1801.02411" target="_self">paper</a>]
+              [<a href="https://github.com/HKUST-KnowComp/FMG">code</a>]
+            </div>
+            -->
+          </li>
+
+          <li class="publication">
+          <div class="publication-title">
+            "Efficient Relation-aware Scoring Function Search for Knowledge Graph Embedding."
+              <strong>ICDE</strong>, 2021.
+          </div>
+          <div class="publication-author">
+            <strong>Shimin DI</strong>, Yongqi ZHANG, Quanming YAO, Lei CHEN.
+          <!--
+          <div class="publication-link">
+            [<a href="https://arxiv.org/abs/2012.04945" target="_self">paper</a>]
+
+            [<a href="https://github.com/HKUST-KnowComp/Social-Explorative-Attention-Networks">code</a>]
+          </div>
+          -->
+        </div></li>
+
+          <li class="publication">
+          <div class="publication-title">
+              "FluxEV: A Fast and Effective Unsupervised Framework for Time-Series Anomaly Detection."
+              <strong>WSDM</strong>, 2021.
+          </div>
+          <div class="publication-author">
+              Jia LI, <strong>Shimin DI</strong>, Yanyan SHEN, Lei CHEN.
+          </div>
+          <!--
+          <div class="publication-link">
+            [<a href="https://hzhaoaf.github.io/" target="_self">paper</a>]
+            [<a href="https://hzhaoaf.github.io/">slides</a>]
+          </div>
+          -->
+        </li>
+
+
+        <li class="publication">
+          <div class="publication-title">
+            "Relation Extraction via Domain-aware Transfer Learning."
+              <strong>SIGKDD</strong>, 2019.
+          </div>
+          <div class="publication-author">
+            <strong>Shimin DI</strong>, Yanyan SHEN, Lei CHEN.
+          </div>
+        </li>
+
+        <li class="publication">
+          <div class="publication-title">
+            "Transfer Learning via Feature Isomorphism Discovery."
+              <strong>SIGKDD</strong>, 2018.
+          </div>
+          <div class="publication-author">
+            <strong>Shimin DI</strong>, Jingshu PENG, Yanyan SHEN, Lei CHEN.
+          </div>
+        </li>
+
+ 
+          <!--
+
+          <li class="publication">
+            <div class="publication-title">
+                Word Polarity Disambiguation Using Bayesian Model and Opinion-Level Features. <Strong>Cognitive Computation</Strong>, 2015.
+            </div>
+            <div class="publication-author">
+              Yunqing Xia, Erik Cambria, Amir Hussain, <Strong>Huan Zhao</Strong>.
+            </div>
+          </li>
+          <li class="publication">
+            <div class="publication-title">
+                Normalization of Chinese Informal Medical Terms Based on Multi-field Indexing.
+                <Strong>NLPCC</Strong>, 2014.
+            </div>
+            <div class="publication-author">
+                Yunqing Xia, <Strong>Huan Zhao</Strong>, Kaiyu Liu, Hualing Zhu.
+            </div>
+          </li>
+          <li class="publication">
+            <div class="publication-title">
+                Cannabis TREATS cancer: Incorporating fine-grained ontological relations in medical document ranking.
+                <Strong>NLPCC</Strong>, 2014.
+            </div>
+            <div class="publication-author">
+                Yunqing Xia, Qiuge Zhang, Huiyuan Wang, <Strong>Huan Zhao</Strong>.
+            </div>
+          </li>-->
+        </ul>
+      </div>
+      <div class="row-fluid content-header text-left">
+        <h2><strong>Academic Service</strong></h2>
+      </div>
+      <div class="row">
+        <ul>
+        <li><strong>PC member:</strong>&nbsp;&nbsp;AAAI 2021, IJCAI 2020</li>
+        </ul>
+      </div>
+      <div class="row-fluid content-header text-left">
+
+      <!--
+      <h2><strong>Selected Awards</strong></h2>
+      </div>
+      <div class="row">
+        <ul>
+          <li>
+          <ul class="list-inline"><li>HKUST Research Travel Grant 2018: AAAI 2018</li></ul>
+          </li>
+          <li>
+          <ul class="list-inline"><li>SIGKDD Travel Award 2017</li></ul>
+          </li>
+          <li>
+          <ul class="list-inline"><li>HKUST Research Travel Grant 2017: SIGKDD 2017, ICDM 2017</li></ul>
+          </li>
+          <li>
+          <ul class="list-inline"><li>HKUST Postgraduate Scholarship: 2014 - 2018</li></ul>
+          </li>
+          <li>
+            <ul class="list-inline"><li>BUPT Outstanding Graduate 2012 (<strong>5%</strong>)</li></ul>
+          </li>
+        </ul>
+      </div>    
+      -->
+
+      <div class="row-fluid content-header text-left">
+        <h2><strong>Teaching Experience</strong></h2>
+      <div class="row">
+        <ul>
+        <li>
+          <div>
+              <a href="http://www.cse.ust.hk/~leichen/courses/mscbd-5002/">MSBD 5002: Knowledge Discovery and Data Mining</a> (2017 Fall/2020 Spring)
+          </div>
+        </li>
+        <li>
+          <div>
+              <a href="https://course.cse.ust.hk/comp4331/">COMP 4331: Introduction to Data Mining</a> (2018 Spring/2018 Fall)
+          </div>
+        </li>
+        <li>
+          <div>
+              <a href="https://course.cse.ust.hk/comp3511/">COMP 3511: Operating System</a> (2020 Fall)
+          </div>
+        </li>
+        <li>
+          <div>
+              <a href="https://course.cse.ust.hk/comp3311/">COMP 3311: Database Management System</a> (2019 Fall)
+          </div>
+        </li>
+        </ul>
+      </div>
+      <!--<div class="row-fluid content-header text-left">
+        <h2><strong>Friends&Collaborators</strong></h2>
+        <a href="http://www.public.asu.edu/~skai2/">Kai Shu</a> (ASU);&nbsp;&nbsp;<a href="https://www.linkedin.com/in/wang-jizhe-24a67b67/">Jizhe Wang</a> (Alibaba Inc.);&nbsp;&nbsp;<a href="https://www.linkedin.com/in/zhibo-zhang-04aa3aa7/">Zhibo Zhang</a> (Alibaba Inc.); &nbsp;&nbsp;<a href="https://www.facebook.com/pipei.huang">Pipei Huang</a> (Alibaba Inc.)
+      </div>-->
+      <div class="row">
+        <ul>
+        </ul>
+      </div>
+    <!--<div class="row-fluid content-header text-left">
+        <h2><strong>Collaborators</strong></h2>
+      <div class="row-fluid">
+    During these years, I was fortunate to work with many
+    During my Ph.D. life, I worked closely with Dr. <a href="http://www.cse.ust.hk/~qyaoaa/">Quanming Yao</a> and collaborated with <a href="https://www.cse.ust.hk/~yqsong/">Prof. Yangqiu Song</a> in our department.
+</div>
+</div>-->
+      <!-- Footer -->
+      <footer>
+          Page Template©<a href="https://hzhaoaf.github.io/">Huan ZHAO</a><br>
+        <!-- <a href="https://hzhaoaf.github.io/#top" target="_self">To top <i class="icon-arrow-up"></i></a>-->
+      </footer>
+
+    <!--
+    <div style="width:251px" align="center">
+    <script type="text/javascript" id="clustrmaps" src="./Shimin-DI-files/map_v2.js"></script><a target="_top" href="http://clustrmaps.com/site/1b6dt?utm_source=widget&amp;utm_campaign=widget_ctr" id="clustrmaps-widget-v2" class="clustrmaps-map-control" style="width: 251px;"><div class="clustrmaps-map-container" style="background-color: rgb(45, 120, 173);"><div class="clstm clustrmaps-visitors" style="font-size: 12px; line-height: 16px; color: rgb(255, 255, 255);">177 Pageviews</div><div class="clstm clustrmaps-date" style="font-size: 12px; line-height: 16px; color: rgb(255, 255, 255);">Dec. 22nd - Jan. 22nd</div><div class="clustrmaps-map liveDotsReady" style="width: 251px; height: 123.039px; background-image: url(&quot;//clustrmaps.com/generated_content/backs/bg-w_251-cl_ffffff.png&quot;);"><div class="jvectormap-container" style="background-color: transparent;"><svg width="251" height="123"><defs></defs><g transform="scale(0.23240740740740742) translate(89.99999999999996, 44.26835857215659)"></g><g></g><g style="visibility: visible;"><circle data-index="0" cx="185.1794133326594" cy="63.31718072113948" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="4" class="jvectormap-marker jvectormap-element"></circle><circle data-index="1" cx="186.4820016424708" cy="51.956031804622434" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="3" class="jvectormap-marker jvectormap-element"></circle><circle data-index="2" cx="185.1891319694703" cy="63.337535649414434" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="3" cx="184.92765990245593" cy="62.85945350727135" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="4" cx="189.4713262955595" cy="61.62155328116861" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="5" cx="187.87258144245047" cy="57.184662242963945" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="6" cx="179.8545314871631" cy="55.26830875163484" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="7" cx="200.07395168824777" cy="54.86341708453889" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="8" cx="188.67777341200548" cy="58.319494010039065" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="9" cx="185.19879241085124" cy="63.29676160953899" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="10" cx="185.1770855154592" cy="63.319503659493996" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="11" cx="135.0440503829862" cy="42.381079626533975" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="12" cx="136.95629401753445" cy="58.4575702675371" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="13" cx="186.42403899418542" cy="51.91370639515136" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="14" cx="61.05519541010956" cy="65.0482552951162" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="15" cx="75.69140425190383" cy="51.40352473966587" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="16" cx="180.91869312024227" cy="80.09750534876574" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="17" cx="179.18865937704103" cy="75.74691097177535" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="18" cx="121.30178154150526" cy="44.06476227917338" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="19" cx="138.25783480960575" cy="48.6912521679047" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="20" cx="177.11934627690815" cy="64.99442446644794" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="21" cx="185.1696946958485" cy="63.16426837555392" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="22" cx="185.23760876266485" cy="63.38844023809876" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="23" cx="179.156186327098" cy="75.70407174804313" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="24" cx="123.4049643819013" cy="46.942418192993955" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="25" cx="123.98691868195554" cy="43.93765762567165" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="26" cx="61.82139644156098" cy="53.43588390417621" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="27" cx="150.96847326338053" cy="43.37962499380285" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="28" cx="165.46774825837204" cy="68.84022724239796" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="29" cx="181.78469931415302" cy="62.99071663283977" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="30" cx="185.19879241085124" cy="63.25603649496283" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="31" cx="121.61621144982458" cy="42.866829560199434" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="32" cx="120.11692258659481" cy="45.56220240972169" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="33" cx="70.43344715091374" cy="51.93106462366028" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="34" cx="75.99454424680209" cy="51.338574199102496" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="35" cx="140.6398901505878" cy="40.172628127318426" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="36" cx="163.5598110856442" cy="64.7061000071497" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="37" cx="189.16580028803102" cy="62.57133109182369" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="38" cx="185.20851104766214" cy="63.306971548423356" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="39" cx="200.04398104179498" cy="54.73320922559863" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="40" cx="98.24900043974645" cy="79.88440447073162" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="41" cx="72.30768916966844" cy="56.660964484108625" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="42" cx="47.35581660054262" cy="48.017556272073456" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="43" cx="183.70747632153223" cy="54.587197619247945" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="44" cx="180.81114796559226" cy="70.18205537565859" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="45" cx="200.0425261560448" cy="54.812351076308836" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="46" cx="125.71346069935647" cy="38.55260859683885" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="47" cx="124.56573042878951" cy="41.94261793914913" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="48" cx="90.85387436723715" cy="85.75745415318664" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="49" cx="75.64979451944994" cy="51.36490647384235" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="50" cx="63.46367147631406" cy="36.59282623431366" fill="#FF0000" stroke="#ffffff" fill-opacity="0.7" stroke-width="0.5" stroke-opacity="1" r="2" class="jvectormap-marker jvectormap-element"></circle><circle data-index="875022669" cx="186.4820016424708" cy="51.956031804622434" fill="#F8A400" stroke="#FFFFFF" fill-opacity="1" stroke-width="0.4" stroke-opacity="1" r="3" class="jvectormap-marker jvectormap-element"></circle><circle data-index="803364003" cx="185.23760876266485" cy="63.38844023809876" fill="#F8A400" stroke="#FFFFFF" fill-opacity="1" stroke-width="0.4" stroke-opacity="1" r="4" class="jvectormap-marker jvectormap-element"></circle></g><g></g></svg><div class="jvectormap-legend-cnt jvectormap-legend-cnt-h"></div><div class="jvectormap-legend-cnt jvectormap-legend-cnt-v"></div></div></div><div id="clstminf" style="display: table-cell;position: absolute;bottom: 3px;right: 5px;color: white;font-size: 12px;"></div></div><div class=""></div></a><style type="text/css">.jvectormap-container {    width: 100%;    height: 100%;    position: absolute;    overflow: hidden;}.jvectormap-tip {    position: absolute;    display: none;    border: solid 1px #CDCDCD;    border-radius: 3px;    background: #292929;    color: white;    font-family: Arial, Helvetica, sans-serif;    padding: 3px;    z-index: 9999;    font-size: 11px;    line-height: 13px;}.jvectormap-zoomin, .jvectormap-zoomout, .jvectormap-goback {    background: #ffffff none repeat scroll 0 0;    border: 1px solid #bebebe;    border-radius: 2px;    box-sizing: content-box;    color: #838383;    cursor: pointer;    font-weight: bold;    left: 10px;    padding: 3px;    position: absolute;    text-align: center;    z-index: 1;}.jvectormap-zoomin, .jvectormap-zoomout {    padding: 2px 10px;}.jvectormap-zoomin {    top: 10px;}.jvectormap-zoomout {    top: 37px;}.jvectormap-goback {    bottom: 10px;    z-index: 1000;    padding: 6px;}.jvectormap-spinner {    position: absolute;    left: 0;    top: 0;    right: 0;    bottom: 0;    background: center no-repeat url(data:image/gif;base64,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);}.jvectormap-legend-title {    font-weight: bold;    font-size: 14px;    text-align: center;}.jvectormap-legend-cnt {    position: absolute;}.jvectormap-legend-cnt-h {    bottom: 0;    right: 0;}.jvectormap-legend-cnt-v {    top: 0;    right: 0;}.jvectormap-legend {    background: black;    color: white;    border-radius: 3px;}.jvectormap-legend-cnt-h .jvectormap-legend {    float: left;    margin: 0 10px 10px 0;    padding: 3px 3px 1px 3px;}.jvectormap-legend-cnt-h .jvectormap-legend .jvectormap-legend-tick {    float: left;}.jvectormap-legend-cnt-v .jvectormap-legend {    margin: 10px 10px 0 0;    padding: 3px;}.jvectormap-legend-cnt-h .jvectormap-legend-tick {    width: 40px;}.jvectormap-legend-cnt-h .jvectormap-legend-tick-sample {    height: 15px;}.jvectormap-legend-cnt-v .jvectormap-legend-tick-sample {    height: 20px;    width: 20px;    display: inline-block;    vertical-align: middle;}.jvectormap-legend-tick-text {    font-size: 12px;}.jvectormap-legend-cnt-h .jvectormap-legend-tick-text {    text-align: center;}.jvectormap-legend-cnt-v .jvectormap-legend-tick-text {    display: inline-block;    vertical-align: middle;    line-height: 20px;    padding-left: 3px;}</style><style type="text/css">a#clustrmaps-widget-v2, #clustrmaps-widget-v2 {    display: block;    font-size: 11px;    line-height: 13px;    margin: 0 auto;    padding: 0;    position: relative;    text-align: center;    color: transparent;    min-height: 139px;    text-decoration: none;    /* text-shadow: 1px 1px 0 #01324f; */    border: 0 none;}.clustrmaps-map {    position: relative;}#clustrmaps-widget-v2 > .clustrmaps-map-container {    background-position: 0 0;    background-repeat: no-repeat;    position: relative;}#clustrmaps-widget-v2 > .clustrmaps-map-container > .clustrmaps-date {    text-align: center;    width: 100%;    z-index: 10;}#clustrmaps-widget-v2 > .clustrmaps-map-container > .clustrmaps-logo {    position: absolute;    background-image: url("//clustrmaps.com/assets/clustrmaps/img/logo4-small.png");    bottom: 0px;    background-repeat: no-repeat;    background-position: center center;    z-index: 1;    width: 100px;    height: 31px;    left: 0px;}#clustrmaps-widget-v2 > .clustrmaps-map-container > .clustrmaps-connection {    background-position: center center;    background-repeat: no-repeat;    bottom: 0;    color: rgba(255, 255, 255, 0.5);    padding: 4px 4px;    position: absolute;    right: 0;    z-index: 1;    font-variant: small-caps;}#clustrmaps-widget-v2 > .clustrmaps-bottom-text {    letter-spacing: 0px;    background: #FFFFFF;    color: #000000;    text-shadow: none;}#clustrmaps-widget-v2 > .clustrmaps-cursor-click {    background-position: center center;    background-repeat: no-repeat;    display: block;    height: 29px;    position: absolute;    right: 0;    top: 56px;    width: 30px;}#clustrmaps-widget-v2 > .clustrmaps-map-container > .clustrmaps-connection.clustrmaps-failed {    color: rgba(255, 0, 0, 0.8);}/*#clustrmaps-widget-v2 > .clustrmaps-map-container {    background-image: url("//clustrmaps.com/images/map_v2_loading.png");}*/#clustrmaps-widget-v2 > .clustrmaps-cursor-click {    background-image: url("//clustrmaps.com/assets/clustrmaps/img/cursor_click.png");}#clustrmaps-widget-v2 > .clustrmaps-bottom-text.variation {    display: none;}/* CONTROL *//*#clustrmaps-widget-v2.clustrmaps-map-control > .clustrmaps-map-container {    background-image: url("//clustrmaps.com/images/map_v2-control.png");}*/#clustrmaps-widget-v2.clustrmaps-map-control > .clustrmaps-bottom-text {    -webkit-border-radius: 3px;    -moz-border-radius: 3px;    border-radius: 3px;    border: 1px solid #999;    background: #F24D58;    background: -moz-linear-gradient(top, #FF636D 50%, #DD2929 50%);    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#f83737), color-stop(50%,#f83737));    background: linear-gradient(to bottom, #FF636D 50%,#DD2929 51%);    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#FF636D", endColorstr="#f83737",GradientType=0 );    display: block;    margin: 2px auto 0;    padding: 3px 14px;    color: #FFFFFF;    text-shadow: 1px 1px 0px #5B0000;    font-weight: 600;}#clustrmaps-widget-v2.clustrmaps-map-control  > .clustrmaps-bottom-text:hover {    border: 1px solid #888;    background: #a3f5a2;    background: -moz-linear-gradient(top,  #ed8b92 50%, #D76666 50%);    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#ed8b92), color-stop(50%,#D76666));    background: linear-gradient(to bottom, #ed8b92 50%,#D76666 51%);    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ed8b92", endColorstr="#D76666",GradientType=0 );}#clustrmaps-widget-v2.clustrmaps-map-control > .clustrmaps-bottom-text.variation {    display: none;}.clstm {    text-transform: capitalize !important;    position: relative;}#clustrmaps-widget-v2.clustrmaps-map-variation > .clustrmaps-bottom-text {    -webkit-border-radius: 3px;    -moz-border-radius: 3px;    border-radius: 3px;    border: 1px solid #999;    background: #F24D58;    background: -moz-linear-gradient(top, #FF636D 50%, #DD2929 50%);    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#f83737), color-stop(50%,#f83737));    background: linear-gradient(to bottom, #FF636D 50%,#DD2929 51%);    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#FF636D", endColorstr="#f83737",GradientType=0 );    display: block;    margin: 2px auto 0;    padding: 3px 14px;    color: #FFFFFF;    text-shadow: 1px 1px 0px #5B0000;    font-weight: 600;}#clustrmaps-widget-v2.clustrmaps-map-variation > .clustrmaps-bottom-text {    display: none;}#clustrmaps-widget-v2.clustrmaps-map-variation > .clustrmaps-bottom-text.variation {    display: block;}#clustrmaps-widget-v2.clustrmaps-map-variation  > .clustrmaps-bottom-text:hover {    border: 1px solid #888;    background: #a3f5a2;    background: -moz-linear-gradient(top,  #ed8b92 50%, #D76666 50%);    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#ed8b92), color-stop(50%,#D76666));    background: linear-gradient(to bottom, #ed8b92 50%,#D76666 51%);    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ed8b92", endColorstr="#D76666",GradientType=0 );}.clustrmaps-visitors, .clustrmaps-date, .clustrmaps-bottom-text {    font-family: Arial, Helvetica, sans-serif;    text-align: center;    font-weight: normal;}.clustrmaps-bottom-text {    font-size: 12px;}</style>
+    </div>
+    </div>
+
+    -->
+    <!--<a href="https://clustrmaps.com/site/19tr3"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=Un6ew55nUkMPh2z9xkYcIB4bH30oI_bxAMK78kuPqvg&cl=ffffff" /></a>-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./Shimin-DI-files/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./Shimin-DI-files/bootstrap.min.js"></script>
+
+
+</div><div class="jvectormap-tip"></div></body></html>
